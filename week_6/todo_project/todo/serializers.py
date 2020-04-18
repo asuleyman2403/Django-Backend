@@ -22,3 +22,6 @@ class TodoSerializer(serializers.ModelSerializer):
         model = Todo
         fields = ('id', 'name', 'list', 'status')
 
+    def create(self, validated_data):
+        return Todo.objects.create(**validated_data)
+
