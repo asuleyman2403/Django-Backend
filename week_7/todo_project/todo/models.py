@@ -8,7 +8,14 @@ class TodoListManager(models.Manager):
         return self.filter(owner=user)
 
 
-class TodoList(models.Model):
+class TodoListBase(models.Model):
+    name = models.CharField(max_length=255, null=False)
+
+    class Meta:
+        abstract = True
+
+
+class TodoList(TodoListBase):
     name = models.CharField(max_length=255, null=False)
     created_at = models.DateTimeField(auto_now=True, editable=True)
     owner = models.ForeignKey(MyUser, on_delete=models.CASCADE)
@@ -23,19 +30,28 @@ class TodoManager(models.Manager):
     pass
 
 
-class Todo(models.Model):
+class TodoBase(models.Model):
+    name = models.CharField(max_length=255, null=False)
+    created_at = models.DateTimeField(auto_now=True, editable=True)
+    list = models.ForeignKey(TodoList, on_delete=models.CASCADE)
+    objects = TodoManager()
+
+    class Meta:
+        abstract = True
+        verbose_name = 'TodoBase'
+        verbose_name_plural = 'BaseTodos'
+
+
+class Todo(TodoBase):
     STATUSES = (
         (1, 'CREATED'),
         (2, 'IN PROGRESS'),
         (3, 'DONE'),
         (4, 'REJECTED')
     )
-    name = models.CharField(max_length=255, null=False)
-    created_at = models.DateTimeField(auto_now=True, editable=True)
-    list = models.ForeignKey(TodoList, on_delete=models.CASCADE)
     status = models.IntegerField(choices=STATUSES)
-    objects = TodoManager()
 
     class Meta:
         verbose_name = 'Todo'
         verbose_name_plural = 'Todos'
+

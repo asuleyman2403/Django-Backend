@@ -1,1 +1,1 @@
-from .cbv import CategoryViewSet, CategoryProductsViewSet, ProductsViewSet
+from .cbv import CategoryViewSet, ProductsViewSet, CategoryProductsAPIView

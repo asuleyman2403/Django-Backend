@@ -23,17 +23,28 @@ class ProductManager(models.Manager):
     pass
 
 
-class Product(models.Model):
+class ProductBase(models.Model):
+    name = models.CharField(max_length=255, null=False)
+    created_at = models.DateTimeField(auto_now=True, editable=True)
+    price = models.IntegerField(default=0, null=False)
+    objects = ProductManager()
+
+    class Meta:
+        abstract=True
+        verbose_name = 'Product'
+        verbose_name_plural = 'Products'
+
+    def round_price(self):
+        return round(self.price, 2)
+
+
+class Product(ProductBase):
     STATUSES = (
         (1, 'IN STOCK'),
         (2, 'SOLD'),
     )
-    name = models.CharField(max_length=255, null=False)
-    created_at = models.DateTimeField(auto_now=True, editable=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     status = models.IntegerField(choices=STATUSES)
-    price = models.IntegerField(default=0, null=False)
-    objects = ProductManager()
 
     class Meta:
         verbose_name = 'Product'

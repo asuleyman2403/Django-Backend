@@ -1,6 +1,6 @@
 from online_shop.models import Category, Product
 from online_shop.serializers import CategorySerializer, ProductSerializer
-from rest_framework import mixins, viewsets
+from rest_framework import mixins, viewsets, generics
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from django.http import Http404
@@ -22,19 +22,23 @@ class CategoryViewSet(mixins.ListModelMixin,
         serializer.save(owner=self.request.user)
 
 
-class CategoryProductsViewSet(mixins.ListModelMixin,
-                              mixins.CreateModelMixin,
-                              viewsets.GenericViewSet):
+class CategoryProductsAPIView(generics.ListCreateAPIView):
     serializer_class = ProductSerializer
     permission_classes = (IsAuthenticated,)
 
-    @action(methods=['GET', 'POST'], detail=False)
-    def products(self):
+    def get_queryset(self):
         try:
             category = Category.objects.for_user(user=self.request.user).get(id=self.kwargs['pk'])
         except Category.DoesNotExist:
             raise Http404
         return category.product_set.all()
+
+    def perform_create(self, serializer):
+        try:
+            category = Category.objects.for_user(user=self.request.user).get(id=self.kwargs['pk'])
+        except Category.DoesNotExist:
+            raise Http404
+        serializer.save(category=category)
 
 
 class ProductsViewSet(mixins.RetrieveModelMixin,

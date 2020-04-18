@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f994b24-4c25-4ed9-aef8-ecd0a917dcb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../week_3/todo_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week_3/todo_project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_3/todo_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../week_3/todo_project/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../week_4/todo_project/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week_4/todo_project/my_auth/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week_4/todo_project/my_auth/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/migrations/0002_auto_20200301_1842.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/migrations/0003_auto_20200301_1843.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week_4/todo_project/my_auth/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week_4/todo_project/my_auth/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/my_auth/views/cbv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week_4/todo_project/my_auth/views/cbv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_4/todo_project/todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week_4/todo_project/todo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/week_6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/week_6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/my_auth/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/my_auth/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/migrations/0002_auto_20200301_1842.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/migrations/0003_auto_20200301_1843.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/my_auth/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/my_auth/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/my_auth/views/cbv.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/my_auth/views/cbv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/online_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/online_shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/online_shop/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/online_shop/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/online_shop/views/cbv.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/online_shop/views/cbv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/todo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/todo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/todo/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/todo/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/todo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/todo/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/todo/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_project/todo/views/cbv.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo_project/todo/views/cbv.py" afterDir="false" />
-    </list>
+    <list default="true" id="4f994b24-4c25-4ed9-aef8-ecd0a917dcb7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo_project/online_shop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="126">
+              <caret line="6" column="50" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="50" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -67,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo_project/todo/views/cbv.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -170,10 +137,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10206000" />
+    <option name="totallyTimeSpent" value="10211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -299,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo_project/online_shop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="126">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="50" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
