@@ -51,6 +51,20 @@ class CategoryProductsAPIView(generics.ListCreateAPIView):
         logger.info(f'Product with id = {serializer.data["id"]} created')
 
 
+class ProductsListAPIView(generics.ListAPIView):
+    serializer_class = ProductSerializer
+    permission_classes = (IsAuthenticated,)
+
+    def get_queryset(self):
+        limit = self.request.query_params.get('limit')
+        offset = self.request.query_params.get('offset')
+        if limit and offset:
+            return Product.objects.all().order_by('category')[int(offset):int(limit)+int(offset)]
+        if limit:
+            return Product.objects.all().order_by('category')[:int(limit)]
+        return Product.objects.all().order_by('category')
+
+
 class ProductsViewSet(mixins.RetrieveModelMixin,
                       mixins.UpdateModelMixin,
                       mixins.DestroyModelMixin,

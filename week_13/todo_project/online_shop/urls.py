@@ -7,7 +7,8 @@ router.register(r'categories', views.CategoryViewSet, basename='categories')
 router.register(r'products', views.ProductsViewSet, basename='products')
 
 urlpatterns = [
-    path('categories/<int:pk>/products/', views.CategoryProductsAPIView.as_view())
+    path('categories/<int:pk>/products/', views.CategoryProductsAPIView.as_view()),
+    path('product-list/', views.ProductsListAPIView.as_view())
 ]
 
 urlpatterns += router.urls

@@ -20,3 +20,6 @@ INFO -- 2020-04-19 13:45:08,973: Todo Task of Task List 4 created
 INFO -- 2020-04-19 13:53:17,856: Product with id = 5 created
 INFO -- 2020-04-19 13:55:48,900: Product with id = 6 created
 INFO -- 2020-04-19 13:58:06,500: Product with id = 9 created
+INFO -- 2020-04-19 18:38:48,587: Category with id = 4 created
+INFO -- 2020-04-19 18:38:59,534: Product with id = 10 created
+INFO -- 2020-04-19 18:39:04,599: Product with id = 11 created
